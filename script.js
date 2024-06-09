@@ -26,7 +26,7 @@ function respostasMagicas() {
     let pergunta =  '';
     while (pergunta != "sair"){
         pergunta = prompt(`Faça a sua pergunta. Se quiser parar digite "sair"`);
-        if (pergunta === "sair") {
+        if ((pergunta === "sair") || (pergunta === "Sair") || (pergunta === "sair ") || (pergunta === "Sair ")){
             break;
         }
         let numAleatorio = Math.floor(Math.random()*10 +1)
